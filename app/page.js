@@ -22,10 +22,10 @@ const WHY_ITEMS = [
   { icon: '🛡️', title: 'Verified Deals Only', desc: 'Our AI scans and verifies deals to show you only genuine discounts worth buying.' },
 ];
 const FAQS = [
-  { q: 'What is BuyHatke?', a: 'BuyHatke is India\'s leading price comparison and price tracking platform. We track prices across 100+ online stores like Amazon, Flipkart, Meesho and more to help you find the best deals.' },
-  { q: 'How does price tracking work?', a: 'Simply search for any product on BuyHatke, and we will show you its complete price history across all stores. You can set a target price and get an instant alert when it drops.' },
-  { q: 'Is BuyHatke free to use?', a: 'Yes! BuyHatke is completely free. We earn a small commission from stores when you purchase through our links, which helps us keep the service free for everyone.' },
-  { q: 'Which stores does BuyHatke support?', a: 'We support 100+ stores including Amazon, Flipkart, Meesho, Myntra, Croma, Nykaa, Tata Cliq, BigBasket, Blinkit, and many more.' },
+  { q: 'What is LowPrice?', a: 'LowPrice is India\'s leading price comparison and price tracking platform. We track prices across 100+ online stores like Amazon, Flipkart, Meesho and more to help you find the best deals.' },
+  { q: 'How does price tracking work?', a: 'Simply search for any product on LowPrice, and we will show you its complete price history across all stores. You can set a target price and get an instant alert when it drops.' },
+  { q: 'Is LowPrice free to use?', a: 'Yes! LowPrice is completely free. We earn a small commission from stores when you purchase through our links, which helps us keep the service free for everyone.' },
+  { q: 'Which stores does LowPrice support?', a: 'We support 100+ stores including Amazon, Flipkart, Meesho, Myntra, Croma, Nykaa, Tata Cliq, BigBasket, Blinkit, and many more.' },
   { q: 'How do I set a price drop alert?', a: 'Go to any product page, enter your target price in the "Set price drop alert" box, and click the alert button. You\'ll get notified as soon as the price drops to your target.' },
 ];
 const LENS_CATS = [
@@ -230,7 +230,7 @@ export default function HomePage() {
           <div className="stat-item"><div className="stat-ico">🛡️</div><span><span className="stat-val">100K+</span> Trusted Stores</span></div>
         </div>
         <div className="tip-bar">
-          💡 <b>Find Best Price</b> by adding <a href="#">buyhatke.com/</a> before any product link • Works with <a href="#">Zivame</a>
+          💡 <b>Find Best Price</b> by adding <a href="#">lowprice.com/</a> before any product link • Works with <a href="#">Zivame</a>
         </div>
       </section>
 
@@ -301,7 +301,7 @@ export default function HomePage() {
 
       {/* WHY */}
       <div className="why-sec">
-        <h2>Why use BuyHatke?</h2>
+        <h2>Why use LowPrice?</h2>
         <p>Join 8 million+ smart shoppers who save every day</p>
         <div className="why-grid">
           {WHY_ITEMS.map(w => (

@@ -36,8 +36,8 @@ export default function Footer() {
         {/* Top row */}
         <div className="ft-top">
           <div className="ft-logo">
-            <div className="logo-icon" style={{ width: 36, height: 36, background: 'rgba(255,255,255,0.15)', borderRadius: 9, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 900, fontSize: 18 }}>H</div>
-            <span className="logo-text">buyhatke</span>
+            <div className="logo-icon" style={{ width: 36, height: 36, background: 'linear-gradient(135deg, #3B82F6, #7C3AED)', borderRadius: 9, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 900, fontSize: 13 }}>LP</div>
+            <span className="logo-text">LowPrice</span>
           </div>
           <div className="ft-socials">
             {[
@@ -96,7 +96,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="ft-bottom">
-          <p>Buyhatke Internet Pvt Ltd. © 2012 – {new Date().getFullYear()}</p>
+          <p>LowPrice © 2024 – {new Date().getFullYear()}</p>
           <div className="ft-btm-links">
             <a href="#">Legal Terms</a>
             <a href="#">Privacy & Policies</a>

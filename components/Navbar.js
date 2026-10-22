@@ -81,8 +81,8 @@ export default function Navbar() {
       <header className={`header${scrolled ? ' scrolled' : ''}`}>
         <nav className="nav-wrap">
           <Link href="/" className="logo">
-            <div className="logo-icon">H</div>
-            <span className="logo-text">buyhatke</span>
+            <div className="logo-icon" style={{ background: 'linear-gradient(135deg, #3B82F6, #7C3AED)', fontSize: 12, fontWeight: 900 }}>LP</div>
+            <span className="logo-text">LowPrice</span>
           </Link>
 
           <ul className="nav-items">
@@ -146,7 +146,7 @@ export default function Navbar() {
       <div className={`modal-overlay${showModal ? ' open' : ''}`} onClick={() => setShowModal(false)}>
         <div className="modal-box" onClick={e => e.stopPropagation()}>
           <div className="modal-hd">
-            <h3>Login to BuyHatke</h3>
+            <h3>Login to LowPrice</h3>
             <button className="btn-close" onClick={() => setShowModal(false)}>✕</button>
           </div>
           <input className="modal-inp" type="email" placeholder="Email address" />

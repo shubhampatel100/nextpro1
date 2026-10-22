@@ -19,9 +19,9 @@ const LEADERBOARD = [
 ];
 
 const FAQS = [
-  { q: 'How does the referral program work?', a: 'Share your unique referral link with friends. When they sign up and make their first purchase through BuyHatke, both of you earn rewards!' },
-  { q: 'How much can I earn per referral?', a: 'You earn ₹50–₹150 per successful referral depending on your tier. Plus, you earn a percentage every time your referred friend shops through BuyHatke.' },
-  { q: 'When do I get my rewards?', a: 'Rewards are credited within 48 hours of your friend\'s first purchase being confirmed. You can withdraw to your bank account or use them as BuyHatke credits.' },
+  { q: 'How does the referral program work?', a: 'Share your unique referral link with friends. When they sign up and make their first purchase through LowPrice, both of you earn rewards!' },
+  { q: 'How much can I earn per referral?', a: 'You earn ₹50–₹150 per successful referral depending on your tier. Plus, you earn a percentage every time your referred friend shops through LowPrice.' },
+  { q: 'When do I get my rewards?', a: 'Rewards are credited within 48 hours of your friend\'s first purchase being confirmed. You can withdraw to your bank account or use them as LowPrice credits.' },
   { q: 'Is there a limit on referrals?', a: 'No! There\'s no limit on how many friends you can refer. The more you refer, the higher your tier and the more you earn per referral.' },
   { q: 'How do I track my referrals?', a: 'You can track all your referrals, pending rewards, and earnings in real-time on this page after logging in.' },
 ];
@@ -32,8 +32,8 @@ export default function ReferPage() {
   const [toast, setToast] = useState('');
 
   const showToast = (msg) => { setToast(msg); setTimeout(() => setToast(''), 2500); };
-  const referCode = 'HATKE' + Math.random().toString(36).substring(2, 8).toUpperCase();
-  const referLink = `https://buyhatke.com/invite/${referCode}`;
+  const referCode = 'LOWP' + Math.random().toString(36).substring(2, 8).toUpperCase();
+  const referLink = `https://lowprice.com/invite/${referCode}`;
 
   const copyLink = () => {
     navigator.clipboard?.writeText(referLink);
@@ -51,7 +51,7 @@ export default function ReferPage() {
           <div className="refer-hero-confetti" />
           <div className="refer-hero-badge">🎁 Refer & Win</div>
           <h1>Refer Once. Earn Everytime They Shop!</h1>
-          <p>Share BuyHatke with friends and earn rewards every time they save money</p>
+          <p>Share LowPrice with friends and earn rewards every time they save money</p>
           <div className="refer-hero-stats">
             <div className="refer-stat">
               <span className="refer-stat-val">₹20.2K+</span>
@@ -109,8 +109,8 @@ export default function ReferPage() {
           <div className="refer-how-steps">
             {[
               { icon: '🔗', title: 'Share Your Link', desc: 'Send your unique referral link to friends via WhatsApp, social media, or email' },
-              { icon: '👋', title: 'Friend Signs Up', desc: 'Your friend creates a free BuyHatke account using your link' },
-              { icon: '🛒', title: 'They Shop & Save', desc: 'When they make their first purchase through BuyHatke, you both earn rewards' },
+              { icon: '👋', title: 'Friend Signs Up', desc: 'Your friend creates a free LowPrice account using your link' },
+              { icon: '🛒', title: 'They Shop & Save', desc: 'When they make their first purchase through LowPrice, you both earn rewards' },
               { icon: '💰', title: 'You Earn Forever', desc: 'Earn a percentage every time your referred friend shops — forever!' },
             ].map((s, i) => (
               <div key={i} className="refer-step">
